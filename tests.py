@@ -19,8 +19,7 @@ arya.inventory.append('mask')
 print(len(arya.inventory))
 
 # arya should have a `greet` method
-# and when I call it it should return
-# "Hello I am Arya Stark, I am awesome"
+# and when I call it with arya.greet(jon) should return
+# "Hello ,Jon Snow,I am Arya Stark, I am awesome"
 
-print(arya.greet())
-print(jon.greet())
+print(arya.greet(jon))
