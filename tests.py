@@ -41,3 +41,4 @@ print(bronn.greet(arya))
 print(jon.greet(bronn))
 
 print(nking.greet_hero(bronn))
+print(nking.make_monster_sounds())

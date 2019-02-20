@@ -22,7 +22,8 @@ class Character():
 class Monster(Character):
     def greet_hero(self, someone):
         return "mruahh. I want to eat you. I mean...hello %s, I am %s. I am terrible" % (someone.name, self.name)
-        
+    def make_monster_sounds(self):
+        return "mreeehhaaaaaahhhh"
 
 class Hero(Character):
         pass
