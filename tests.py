@@ -33,6 +33,7 @@ print(arya.greet(jon))
 print(arya.greet())
 # I should be able to create a Hero instance
 bronn = Hero("Bronn of the Blackwater", "bron.png")
+# I should be able to create a Monster
 nking = Monster("The Night King", "nking.png")
 
 
@@ -40,5 +41,13 @@ print(bronn.greet(arya))
 
 print(jon.greet(bronn))
 
+# Monster should greet Hero in weird way
 print(nking.greet_hero(bronn))
+# Monster should be able to make monster sounds
 print(nking.make_monster_sounds())
+
+# Hero should freak out when greeting Monster
+print(bronn.greet(nking))
+print(bronn.greet(jon))
+
+

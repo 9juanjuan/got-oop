@@ -20,10 +20,17 @@ class Character():
             return "Hello I am %s, I am awesome." % (self.name)
 
 class Monster(Character):
-    def greet_hero(self, someone):
-        return "mruahh. I want to eat you. I mean...hello %s, I am %s. I am terrible" % (someone.name, self.name)
+
+    def greet_hero(self, hero):
+        return "mruahh. I want to eat you. I mean...hello %s, I am %s. I am terrible" % (hero.name, self.name)
     def make_monster_sounds(self):
         return "mreeehhaaaaaahhhh"
+ 
 
 class Hero(Character):
-        pass
+    def greet(self, someone=None):
+        if type(someone) == Monster:
+            return "Die"
+        else:
+            return super().greet(someone)
+
