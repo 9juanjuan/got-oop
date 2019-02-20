@@ -20,9 +20,9 @@ class Character():
             return "Hello I am %s, I am awesome." % (self.name)
 
 class Monster(Character):
-    def __init__(self, new_name, new_avatar):
-        pass
+    def greet_hero(self, someone):
+        return "mruahh. I want to eat you. I mean...hello %s, I am %s. I am terrible" % (someone.name, self.name)
+        
 
 class Hero(Character):
-    def __init__(self, new_name, new_avatar):
         pass

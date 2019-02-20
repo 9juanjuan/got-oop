@@ -32,4 +32,12 @@ print(arya.greet(jon))
 
 print(arya.greet())
 # I should be able to create a Hero instance
-bron = Hero("Bronn of the Blackwater", "bron.png")
+bronn = Hero("Bronn of the Blackwater", "bron.png")
+nking = Monster("The Night King", "nking.png")
+
+
+print(bronn.greet(arya))
+
+print(jon.greet(bronn))
+
+print(nking.greet_hero(bronn))
