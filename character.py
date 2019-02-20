@@ -12,6 +12,3 @@ class Character():
         self.avatar = new_avatar
         self.inventory = []
 
-
-   
-        
