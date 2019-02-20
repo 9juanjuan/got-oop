@@ -18,3 +18,11 @@ class Character():
             return "Hello, %s I am %s, I am awesome." % (someone.name, self.name)
         else:
             return "Hello I am %s, I am awesome." % (self.name)
+
+class Monster(Character):
+    def __init__(self, new_name, new_avatar):
+        pass
+
+class Hero(Character):
+    def __init__(self, new_name, new_avatar):
+        pass
